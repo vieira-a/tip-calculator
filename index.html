@@ -1,0 +1,86 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racha Conta</title>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Racha Conta</h1>
+  </header>
+  <div class="main">
+    <div class="main-form">
+
+      <div class="input-form">
+        
+        <div class="bill">
+          <header>
+            <h3>Conta</h3>
+          </header>
+          <div class="content">
+            <input type="text" id="bill">
+          </div>
+        </div>
+
+        <div class="tip">
+          <header>
+            <h3>Selecione a gorjeta %</h3>
+          </header>
+          <div class="content">
+            <ul>
+              <li><button id="5">5%</button></li>
+              <li><button id="10">10%</button></li>
+              <li><button id="15">15%</button></li>
+              <li><button id="25">25%</button></li>
+              <li><button id="50">50%</button></li>
+              <li><button id="custom">Digitar</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="people">
+          <header>
+            <h3>Número de Pessoas</h3>
+          </header>
+          <div class="content">
+            <input type="text" id="number-of-people">
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="output-form">
+        
+        <div class="tip-amount">
+          <header>
+            <h3>Total de gorjeta / pessoa</h3>
+          </header>
+          <div class="content">
+            <h2 id="tip-by-person">R$ 0,00</h2>
+          </div>
+        </div>
+
+        <div class="total">
+          <header>
+            <h3>Total</h3>
+          </header>
+          <div class="content">
+            <h2 id="total-by-person">R$ 0,00</h2>
+          </div>
+        </div>
+
+        <div class="reset">
+          <button id="reset">Limpar</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+</body>
+<script src="/src/js/main.js"></script>
+</html>
