@@ -1,6 +1,6 @@
 # Sobre este projeto
 
-tip-calculator é uma aplicação para calculo de gorjetas proposta pela plataforma [Frontend Mentor](https://www.frontendmentor.io/).
+tip-calculator é uma aplicação para rateio de conta entre pessoas proposta pela plataforma [Frontend Mentor](https://www.frontendmentor.io/).
 
 [Página do projeto](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
@@ -14,7 +14,9 @@ tip-calculator é uma aplicação para calculo de gorjetas proposta pela platafo
 
 ### Interações do sistema
 
-- O sistema realizará o calculo da gorjeta e informará na tela o resultado.
+- O sistema realizará o calculo de rateio da gorjeta, bem como da conta, e informará na tela os resultados:
+  Total da gorjeta por pessoa;
+  Total da conta por pessoa.
 
 ### Interações de design
 
