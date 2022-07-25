@@ -14,3 +14,9 @@ function selectTip(clickedTip) {
     //console.log(tip)
   }
 }
+
+function getNumberPeople() {
+  let people = document.querySelector('#number-of-people').value
+  return people
+  //console.log(people)
+}
