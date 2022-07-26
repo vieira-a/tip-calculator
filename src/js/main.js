@@ -26,3 +26,9 @@ function calculateAmount() {
   document.getElementById('tip-by-person').textContent = `R$ ${amountTipByPerson.toFixed(2)}`
   document.getElementById('total-by-person').textContent = `R$ ${amountByPerson.toFixed(2)}`
 }
+
+function getNumberPeople() {
+  let people = document.querySelector('#number-of-people').value
+  return people
+  //console.log(people)
+}
