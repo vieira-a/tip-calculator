@@ -1,16 +1,28 @@
-function getBillValue() {
-  let billValue = Number(document.querySelector('#bill').value)
-  return billValue
+let bill = 0
+let numberOfpeople = 0
+
+document.querySelector('#bill').addEventListener("change", function() {
+  bill = Number(document.querySelector('#bill').value)
+  console.log(bill)
+})
+
+document.querySelector('#number-of-people').addEventListener("change", function() {
+  numberOfpeople = Number(document.querySelector('#number-of-people').value)
+  console.log(numberOfpeople)
+})
+
+let tip = ''
+function getTip(clickedTip) {
+  tip = Number(clickedTip)
+  document.getElementById(tip).style.backgroundColor = 'red'
 }
 
-function selectTip(clickedTip) {
-  if (document.querySelector('#custom').value === '') {
-    let tip = Number(clickedTip)
-    return tip
-    //console.log(tip)
-  } else {
-    tip = Number(document.querySelector('#custom').value)
-    return tip
-    //console.log(tip)
-  }
+function calculateAmount() {
+  let amountTip = bill*(tip/100)
+  let amountTipByPerson = amountTip/numberOfpeople
+  let amount = bill + amountTip
+  let amountByPerson = amount/numberOfpeople
+  
+  document.getElementById('tip-by-person').textContent = `R$ ${amountTipByPerson.toFixed(2)}`
+  document.getElementById('total-by-person').textContent = `R$ ${amountByPerson.toFixed(2)}`
 }

@@ -30,14 +30,15 @@
           </header>
           <div class="content">
             <ul>
-              <li><button id="5" onclick="selectTip(this.id)">5%</button></li>
-              <li><button id="10" onclick="selectTip(this.id)">10%</button></li>
-              <li><button id="15" onclick="selectTip(this.id)">15%</button></li>
-              <li><button id="25" onclick="selectTip(this.id)">25%</button></li>
-              <li><button id="50" onclick="selectTip(this.id)">50%</button></li>
-              <li><input id="custom"></button></li>
+              <li><button id="5" onclick="getTip(this.id)">5%</button></li>
+              <li><button id="10" onclick="getTip(this.id)">10%</button></li>
+              <li><button id="15" onclick="getTip(this.id)">15%</button></li>
+              <li><button id="25" onclick="getTip(this.id)">25%</button></li>
+              <li><button id="50" onclick="getTip(this.id)">50%</button></li>
+              <li><button id="100" onclick="getTip(this.id)">100%</button></li>
             </ul>
           </div>
+          <h4 style="color:green" id="result"></h4>  
         </div>
 
         <div class="people">
@@ -58,20 +59,21 @@
             <h3>Total de gorjeta / pessoa</h3>
           </header>
           <div class="content">
-            <h2 id="tip-by-person">R$ 0,00</h2>
+            <h2 id="tip-by-person">R$ 0.00</h2>
           </div>
         </div>
 
         <div class="total">
           <header>
-            <h3>Total</h3>
+            <h3>Total por pessoa</h3>
           </header>
           <div class="content">
-            <h2 id="total-by-person">R$ 0,00</h2>
+            <h2 id="total-by-person">R$ 0.00</h2>
           </div>
         </div>
 
-        <div class="reset">
+        <div class="calc-reset">
+          <button id="calculate" onclick="calculateAmount()">Calcular</button>
           <button id="reset">Limpar</button>
         </div>
 
