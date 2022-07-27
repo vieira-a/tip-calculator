@@ -1,0 +1,113 @@
+:root {
+  --green-dark: #014141;
+  --green-dark-2: #025a51;
+  --green-hover: #26c0a3;
+  --green-light: #cff2f2;
+  --green-light-2: #d0f2f2;
+  --white-light: #f2f2f2;
+
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  margin-inline: auto;
+
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.6rem;
+  color: var(--white-light);
+
+  line-height: 100%;
+
+  background-color: var(--green-light);
+
+}
+
+body img {
+  padding-block: 4rem;
+}
+
+.wrapper {
+  display: flex;
+  width: 37.5rem;
+  height: 100vh;
+  padding-top: 1.6rem;
+  margin-inline: auto;
+}
+
+.wrapper header h1 {
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  border-radius: 2rem;
+  
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--green-dark-2);
+
+  padding-block: 3rem;
+  padding-inline: 3rem;
+}
+
+.bill-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding-block: 2rem;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+}
+
+.output-form {
+  background-color: var(--green-dark-2);
+  color: var(--white-light);
+
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.output-form h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  color: var(--green-hover);
+}
+
+.output-form h4 {
+  font-size: 1rem;
+
+  color: var(--green-light-2);
+}
+
+.output-form .content {
+  text-align: right;
+}
+
+
+.tip-amount,
+.total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-bottom: 3rem;
+}
+

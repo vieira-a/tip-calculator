@@ -3,13 +3,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Racha Conta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/style.css">
+
+  <title>Splitter</title>
 </head>
 <body>
+  <h1><img src="/src/images/logo.svg" alt="Splitter Logo"></h1>
 <div class="wrapper">
-  <header>
-    <h1>Racha Conta</h1>
-  </header>
   <div class="main">
     <div class="main-form">
 
@@ -17,7 +21,7 @@
         
         <div class="bill-form">
           <header>
-            <h3>Conta</h3>
+            <h3>Bill</h3>
           </header>
           <div class="content">
             <input type="text" id="bill">
@@ -26,7 +30,7 @@
 
         <div class="tip">
           <header>
-            <h3>Selecione a gorjeta %</h3>
+            <h3>Select Tip %</h3>
           </header>
           <div class="content">
             <ul>
@@ -43,7 +47,7 @@
 
         <div class="people">
           <header>
-            <h3>Número de Pessoas</h3>
+            <h3>Number of People</h3>
           </header>
           <div class="content">
             <input type="text" id="number-of-people">
@@ -56,8 +60,10 @@
         
         <div class="tip-amount">
           <header>
-            <h3>Total de gorjeta / pessoa</h3>
+            <h3>Tip Amount</h3>
+            <h4>/ person</h4>
           </header>
+
           <div class="content">
             <h2 id="tip-by-person">R$ 0.00</h2>
           </div>
@@ -65,7 +71,8 @@
 
         <div class="total">
           <header>
-            <h3>Total por pessoa</h3>
+            <h3>Total</h3>
+            <h4>/person</h4>
           </header>
           <div class="content">
             <h2 id="total-by-person">R$ 0.00</h2>
