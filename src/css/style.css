@@ -63,7 +63,7 @@ svg{
 }
 
 input {
-  width: 31.5rem;
+  width: 100%;
   padding: 0.5rem;
   height: 4rem;
 
@@ -198,4 +198,33 @@ textarea:focus, input:focus{
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--green-dark-2);
+}
+
+@media (min-width: 1024px) {
+
+  .wrapper {
+    width: 100vw;
+
+  }
+  .main {
+    width: 768px;
+    margin-inline: auto;
+  }
+
+  .main-form {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .tip .content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tip .content button {
+    width: 10rem;
+    height: 5rem;
+  }
 }
