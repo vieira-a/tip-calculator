@@ -10,7 +10,7 @@ tip-calculator é uma aplicação para rateio de conta entre pessoas proposta pe
 
 #### Versão desktop
 
-<img src="https://user-images.githubusercontent.com/65618765/181636700-348ec2e4-8e23-48cf-97ff-8e172378d0b9.jpg" alt="tip-calculator desktop version>
+<img src="https://user-images.githubusercontent.com/65618765/181636700-348ec2e4-8e23-48cf-97ff-8e172378d0b9.jpg" alt="tip-calculator desktop version">
 
 ## Como funciona
 
