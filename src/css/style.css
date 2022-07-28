@@ -21,6 +21,8 @@ body {
   line-height: 100%;
 
   background-color: var(--green-light);
+
+  overflow-x: hidden;
 }
 
 nav {
@@ -149,20 +151,12 @@ textarea:focus, input:focus{
   text-align: right;
 }
 
-/* .tip-amount,
-.total {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  padding-bottom: 3rem;
-} */
 .tip-amount,
 .total {
   display: flex;
   justify-content: space-between;
   padding-bottom: 3rem;
 }
-
 
 .calc-reset {
   text-align: center;
@@ -200,6 +194,11 @@ textarea:focus, input:focus{
 }
 
 @media (min-width: 1024px) {
+
+  nav {
+    text-align: center;
+    padding: 10rem 0 8rem;
+  }
 
   .wrapper {
     width: 100vw;
