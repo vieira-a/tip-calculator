@@ -16,7 +16,8 @@ document
 let tip = ''
 function getTip(clickedTip) {
   tip = Number(clickedTip)
-  document.getElementById(tip).style.backgroundColor = 'red'
+  document.getElementById(tip).style.backgroundColor = '#26c0a3'
+  document.getElementById(tip).style.color = '#025a51'
 }
 
 function calculateAmount() {
