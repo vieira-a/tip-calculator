@@ -232,7 +232,12 @@ textarea:focus, input:focus{
     padding: 5rem 5rem;
   }
 
+  .output-form h2 {
+    font-size: 3.2rem;
+  }
+
   .calc-reset {
     padding-top: 10rem;
   }
+
 }
