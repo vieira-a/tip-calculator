@@ -25,16 +25,23 @@ function calculateAmount() {
   let amountTipByPerson = amountTip / numberOfpeople
   let amount = bill + amountTip
   let amountByPerson = amount / numberOfpeople
+  document.getElementById('calculate').style.display = 'none'
 
   document.getElementById(
     'tip-by-person'
-  ).textContent = `R$ ${amountTipByPerson.toFixed(2)}`
+  ).textContent = `$ ${amountTipByPerson.toFixed(2)}`
   document.getElementById(
     'total-by-person'
-  ).textContent = `R$ ${amountByPerson.toFixed(2)}`
+  ).textContent = `$ ${amountByPerson.toFixed(2)}`
 }
 
 function getNumberPeople() {
   let people = document.querySelector('#number-of-people').value
   return people
+}
+
+function resetForm() {
+  if(document.getElementById('calculate').textContent = 'RESET') {
+    window.location.reload()
+  }
 }

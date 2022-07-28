@@ -130,8 +130,10 @@ textarea:focus, input:focus{
   padding: 3rem 3rem;
 }
 
+
 .output-form h2 {
   font-size: 2.2rem;
+  line-height: 100%;
   font-weight: 700;
 
   color: var(--green-hover);
@@ -147,19 +149,28 @@ textarea:focus, input:focus{
   text-align: right;
 }
 
-.tip-amount,
+/* .tip-amount,
 .total {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   padding-bottom: 3rem;
+} */
+.tip-amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
 }
 
+
 .calc-reset {
+  position: relative;
   text-align: center;
 }
 
 #calculate {
+  position: absolute;
   width: 20rem;
   height: 3.5rem;
   text-transform: uppercase;
@@ -175,5 +186,16 @@ textarea:focus, input:focus{
 }
 
 #reset {
-  display: none;
+  width: 20rem;
+  height: 3.5rem;
+  text-transform: uppercase;
+
+  background-color: var(--green-hover);
+  border: none;
+  border-radius: .5rem;
+
+  font-family: 'Cursine', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--green-dark-2);
 }
