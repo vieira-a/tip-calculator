@@ -165,13 +165,13 @@ textarea:focus, input:focus{
 
 
 .calc-reset {
-  position: relative;
+  
   text-align: center;
 }
 
 #calculate {
   position: absolute;
-  width: 20rem;
+  width: 25.5rem;
   height: 3.5rem;
   text-transform: uppercase;
 
@@ -186,7 +186,7 @@ textarea:focus, input:focus{
 }
 
 #reset {
-  width: 20rem;
+  width: 25.5rem;
   height: 3.5rem;
   text-transform: uppercase;
 
