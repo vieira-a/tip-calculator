@@ -1,6 +1,7 @@
 # Sobre este projeto
 
 tip-calculator é uma aplicação para rateio de conta entre pessoas proposta pela plataforma [Frontend Mentor](https://www.frontendmentor.io/).
+
 [Página do projeto](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
 #### Versão mobile
