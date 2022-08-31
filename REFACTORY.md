@@ -13,8 +13,8 @@ Tanto o HTML quanto o JS não fica semântico. Além disso, o botão selecionado
 **Solução**
 
 - [x] Ajustar o HTML para que os botões estejam agrupados em uma classe em comum, para simplificar operações de iteração sob a classe.
-- [ ] Criar função com forEach e EventListener para a classe de botões a fim de capturar o seu valor e modificar sua cor de fundo.
-- [ ] Criar função para fazer com que a cor do botão retorne ao padrão, e aplicar na função anterior antes de cada novo clique.
+- [x] Criar função com forEach e EventListener para a classe de botões a fim de capturar o seu valor e modificar sua cor de fundo.
+- [x] Criar função para fazer com que a cor do botão retorne ao padrão, e aplicar na função anterior antes de cada novo clique.
 
 ### Aplicação permitindo divisão por 0 e retornando valor inválido.
 

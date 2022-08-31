@@ -1,6 +1,7 @@
 /**
  * Refactoring and improving 
  */
+
 //Variables initialization
 
 //General
@@ -11,28 +12,39 @@ let tipValue = 0;
 
 let numberOfpeople = 0;
 
-const validationText = "Invalid option"
+const validationText = "Invalid option";
 
-//DOM elements
+let tipButtonColorOriginal = "#014141"
 
-let billElement = document.getElementById('bill')
-
-const billValidation = document.getElementById('bill-validation')
+let tipButtonColorHover = "#26c0a3"
 
 /**
- * Get elements values
+ * DOM elements 
+ */
+
+//Bill
+
+let billElement = document.getElementById('bill');
+
+const billValidation = document.getElementById('bill-validation');
+
+//Tip
+
+const tipButtons = document.querySelectorAll('.billButton');
+
+/**
+ * Functions to get elements values
  */
 
 /**
- * Bill value on 
- * <input type="number" id="bill">
+ * Bill value on <input type="number" id="bill">
  */
 
 function getBillValue() {
   
   billElement.addEventListener('change', function(){
     
-    billValue = Number(billElement.value)
+    billValue = Number(billElement.value);
 
     validationBill()
 
@@ -43,18 +55,55 @@ function validationBill() {
   
   if(billValue === 0 ) {
   
-    billValidation.textContent = validationText
+    billValidation.textContent = validationText;
   
   } else {
   
-    billValidation.textContent = " "
+    billValidation.textContent = " ";
   
   }
 
 }
 
-getBillValue()
+/**
+ * Tip tax on <button class="billButton" id="5">5%</button></li>
+ * Id value will be the tax
+ */
 
+function getTipTax() {
+
+  tipButtons.forEach(function(currentButton) {
+    
+      currentButton.addEventListener('click', function () {
+    
+        cleanTipButtonColor()
+        
+        currentButton.style.backgroundColor = tipButtonColorHover;
+        
+        tipValue = Number(currentButton.id);
+        
+        console.log(tipValue);
+
+      })
+    })  
+}
+
+function cleanTipButtonColor() {
+  
+  tipButtons.forEach(function(currentButton) {
+
+    if(currentButton.style.backgroundColor = tipButtonColorHover){
+      
+      currentButton.style.backgroundColor = tipButtonColorOriginal;
+    
+    }
+
+    })
+
+}
+
+getBillValue()
+getTipTax()
 
 /**
  * 
