@@ -59,6 +59,11 @@ nav {
   gap: 1rem;
 }
 
+.bill-form p {
+  font-size: 1rem;
+  color: red;
+}
+
 svg{
   position: absolute;
   margin: 1rem;

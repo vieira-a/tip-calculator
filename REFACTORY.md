@@ -12,7 +12,7 @@ Tanto o HTML quanto o JS não fica semântico. Além disso, o botão selecionado
 
 **Solução**
 
-- [ ] Ajustar o HTML para que os botões estejam agrupados em uma classe em comum, para simplificar operações de iteração sob a classe.
+- [x] Ajustar o HTML para que os botões estejam agrupados em uma classe em comum, para simplificar operações de iteração sob a classe.
 - [ ] Criar função com forEach e EventListener para a classe de botões a fim de capturar o seu valor e modificar sua cor de fundo.
 - [ ] Criar função para fazer com que a cor do botão retorne ao padrão, e aplicar na função anterior antes de cada novo clique.
 
@@ -24,7 +24,7 @@ Isso acontece porque não há validação para campos vazios ou com 0.
 
 **Solução** 
 
-- [ ] Travar condição de 0 pessoas como inválida
+- [x] Travar condição de 0 pessoas como inválida
 
 ## Melhorias 
 

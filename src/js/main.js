@@ -1,3 +1,63 @@
+/**
+ * Refactoring and improving 
+ */
+//Variables initialization
+
+//General
+
+let billValue = 0;
+
+let tipValue = 0; 
+
+let numberOfpeople = 0;
+
+const validationText = "Invalid option"
+
+//DOM elements
+
+let billElement = document.getElementById('bill')
+
+const billValidation = document.getElementById('bill-validation')
+
+/**
+ * Get elements values
+ */
+
+/**
+ * Bill value on 
+ * <input type="number" id="bill">
+ */
+
+function getBillValue() {
+  
+  billElement.addEventListener('change', function(){
+    
+    billValue = Number(billElement.value)
+
+    validationBill()
+
+  }
+)}
+  
+function validationBill() {
+  
+  if(billValue === 0 ) {
+  
+    billValidation.textContent = validationText
+  
+  } else {
+  
+    billValidation.textContent = " "
+  
+  }
+
+}
+
+getBillValue()
+
+
+/**
+ * 
 let bill = 0
 let numberOfpeople = 0
 
@@ -42,3 +102,5 @@ function resetForm() {
     window.location.reload()
   }
 }
+
+ */
