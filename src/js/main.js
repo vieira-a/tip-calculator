@@ -6,9 +6,7 @@ document.querySelector('#bill').addEventListener('change', function () {
   console.log(bill)
 })
 
-document
-  .querySelector('#number-of-people')
-  .addEventListener('change', function () {
+document.querySelector('#number-of-people').addEventListener('change', function () {
     numberOfpeople = Number(document.querySelector('#number-of-people').value)
     console.log(numberOfpeople)
   })
@@ -25,14 +23,13 @@ function calculateAmount() {
   let amountTipByPerson = amountTip / numberOfpeople
   let amount = bill + amountTip
   let amountByPerson = amount / numberOfpeople
+  
   document.getElementById('calculate').style.display = 'none'
 
-  document.getElementById(
-    'tip-by-person'
-  ).textContent = `$ ${amountTipByPerson.toFixed(2)}`
-  document.getElementById(
-    'total-by-person'
-  ).textContent = `$ ${amountByPerson.toFixed(2)}`
+  //O conteúdo document.getElementById('tip-by-person') pode ser substituído pelo id do elemento diretamente. 
+  //Exemplo: tip-by-person.textContent = `$ ${amountTipByPerson.toFixed(2)}`
+  document.getElementById('tip-by-person').textContent = `$ ${amountTipByPerson.toFixed(2)}`
+  document.getElementById('total-by-person').textContent = `$ ${amountByPerson.toFixed(2)}`
 }
 
 function getNumberPeople() {
