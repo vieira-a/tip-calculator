@@ -24,7 +24,7 @@ let tipButtonColorHover = "#26c0a3"
 
 //Bill
 
-let billElement = document.getElementById('bill');
+const billElement = document.getElementById('bill');
 
 const billValidation = document.getElementById('bill-validation');
 
@@ -33,6 +33,10 @@ const billValidation = document.getElementById('bill-validation');
 const tipButtons = document.querySelectorAll('.billButton');
 
 const tipTaxCustom = document.querySelector('.tipCustom');
+
+//People
+
+const people = document.getElementById('number-of-people');
 
 /**
  * Functions to get elements values
@@ -100,7 +104,6 @@ function getTipTax() {
 
 function getTipTaxCustom() {
 
-  
   tipTaxCustom.addEventListener('change', function() {
     
     validationBill()
@@ -108,17 +111,10 @@ function getTipTaxCustom() {
     tipValue = Number(tipTaxCustom.value);
     
     cleanTipButtonColor()
-    
-    console.log(tipValue)
   
   })
 
 }
-
-
-
-
-
 
 function cleanTipButtonColor() {
   
@@ -134,9 +130,20 @@ function cleanTipButtonColor() {
 
 }
 
+function getPeople() {
+  
+  people.addEventListener('change', function() {
+    
+    numberOfpeople = people.value;
+    
+  })
+
+}
+
 getBillValue()
 getTipTax()
 getTipTaxCustom()
+getPeople()
 
 /**
  * 
