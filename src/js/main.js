@@ -73,11 +73,13 @@ function validationBill() {
  */
 
 function getTipTax() {
-
+  
   tipButtons.forEach(function(currentButton) {
     
       currentButton.addEventListener('click', function () {
-    
+        
+        validationBill()
+        
         cleanTipButtonColor()
 
         if(tipTaxCustom.value === "") {
@@ -98,8 +100,11 @@ function getTipTax() {
 
 function getTipTaxCustom() {
 
-  tipTaxCustom.addEventListener('change', function() {
   
+  tipTaxCustom.addEventListener('change', function() {
+    
+    validationBill()
+    
     tipValue = Number(tipTaxCustom.value);
     
     cleanTipButtonColor()
