@@ -121,6 +121,11 @@ textarea:focus, input:focus{
   border-radius: .5rem;
 }
 
+.tip .content .tipCustom {
+  height: 5rem;
+  text-align: center;
+}
+
 .people {
   display: flex;
   flex-direction: column;
@@ -231,6 +236,11 @@ textarea:focus, input:focus{
   .tip .content button {
     width: 10rem;
     height: 5rem;
+  }
+
+  .tip .content .tipCustom {
+    height: 5rem;
+    text-align: center;
   }
 
   .output-form {

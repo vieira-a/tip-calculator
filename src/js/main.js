@@ -32,6 +32,8 @@ const billValidation = document.getElementById('bill-validation');
 
 const tipButtons = document.querySelectorAll('.billButton');
 
+const tipTaxCustom = document.querySelector('.tipCustom');
+
 /**
  * Functions to get elements values
  */
@@ -77,16 +79,41 @@ function getTipTax() {
       currentButton.addEventListener('click', function () {
     
         cleanTipButtonColor()
-        
-        currentButton.style.backgroundColor = tipButtonColorHover;
-        
-        tipValue = Number(currentButton.id);
-        
-        console.log(tipValue);
 
+        if(tipTaxCustom.value === "") {
+
+          currentButton.style.backgroundColor = tipButtonColorHover;
+          
+          tipValue = Number(currentButton.id);
+
+        } else {
+
+          tipValue = tipTaxCustom.value
+
+        }
+        
       })
     })  
 }
+
+function getTipTaxCustom() {
+
+  tipTaxCustom.addEventListener('change', function() {
+  
+    tipValue = Number(tipTaxCustom.value);
+    
+    cleanTipButtonColor()
+    
+    console.log(tipValue)
+  
+  })
+
+}
+
+
+
+
+
 
 function cleanTipButtonColor() {
   
@@ -104,6 +131,7 @@ function cleanTipButtonColor() {
 
 getBillValue()
 getTipTax()
+getTipTaxCustom()
 
 /**
  * 
