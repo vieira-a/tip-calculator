@@ -37,7 +37,7 @@ Conforme são selecionados, alguns objetos sofrerão alterações de estilo para
 
 # O que aprendi com este projeto
 
-Este projeto foi iniciado em 24/07/2022 e finalizado em 28/07/2022. A entrega foi parte do programa de [Mentoria Conquiste Sua Vaga](https://conquistesuavaga.com/mentoria), idealizado por [pedromarins](https://github.com/pedromarins/) e [henriquecrang](https://github.com/henriquecrang); foi o meu primeiro projeto para este programa. O principal objetivo era manter o **compromisso** da entrega a fim de aumentar a minha **confiança**, e construir uma **mentalidade focada e correta**. 
+Este projeto foi iniciado em 24/07/2022 e finalizado em 28/07/2022. A entrega foi parte do programa de [Mentoria Conquiste Sua Vaga](https://conquistesuavaga.com/mentoria), idealizado por [Pedro Marins](https://github.com/pedromarins/) e [Henrique de Andrade](https://github.com/henriquecrang); foi o meu primeiro projeto para este programa. O principal objetivo era manter o **compromisso** da entrega a fim de aumentar a minha **confiança**, e construir uma **mentalidade focada e correta**. 
 
 Na primeira versão entregue em 28/07, apliquei o que eu conhecia até então de HTML, CSS e Javascript. Muitas das funcionalidades necessárias para a boa execução da aplicação e experiência do usuário ainda não estavam disponíveis, a maioria delas por falta de conhecimento prático. O meu desejo era poder voltar um dia e aplicar as melhorias que faltavam.
 
@@ -65,4 +65,4 @@ Ah, o que sobre as tecnologias?
 
 E aprendi mais uma vez que não existe código perfeito! E que é possível sim melhorar, superar desafios internos e aprender com a prática todos os dias.
 
-Gratidão [JCDMeira](https://github.com/JCDMeira) pelas ISSUES de 26 dias atrás!
+Gratidão [Jean Meira](https://github.com/JCDMeira) pelas ISSUES de 26 dias atrás!
