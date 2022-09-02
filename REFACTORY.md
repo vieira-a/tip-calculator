@@ -40,5 +40,5 @@ Isso acontece porque não há validação para campos vazios ou com 0.
 
 - [x] A função calculate() deve ser invocada ao modificar o número de pessoas, caso sejam preenchidos os demais campos.
 
-- [ ] Simplificar o código
-    - [ ] conteúdo `document.getElementById('tip-by-person')` pode ser substituído pelo id do elemento diretamente e aplicadas modificações necessárias
+- [x] Simplificar o código
+    - [x] conteúdo `document.getElementById('tip-by-person')` pode ser substituído pelo id do elemento diretamente e aplicadas modificações necessárias
