@@ -181,22 +181,6 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
-#calculate {
-  position: absolute;
-  width: 25.5rem;
-  height: 3.5rem;
-  text-transform: uppercase;
-
-  background-color: var(--green-hover);
-  border: none;
-  border-radius: .5rem;
-
-  font-family: 'Cursine', monospace;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--green-dark-2);
-}
-
 #reset {
   width: 25.5rem;
   height: 3.5rem;

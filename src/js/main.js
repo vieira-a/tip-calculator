@@ -103,7 +103,13 @@ function getTipTax() {
 
         } else {
 
-          tipValue = tipTaxCustom.value
+          tipTaxCustom.value = "";
+
+          currentButton.style.backgroundColor = tipButtonColorHover;
+          
+          tipValue = Number(currentButton.id);
+
+          //tipValue = tipTaxCustom.value
 
         }
         
@@ -205,6 +211,11 @@ function calculate() {
 
 }
 
+function resetForm() {
+  
+  window.location.reload()
+  
+}
 
 getBillValue()
 getTipTax()
