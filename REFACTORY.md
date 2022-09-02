@@ -28,17 +28,17 @@ Isso acontece porque não há validação para campos vazios ou com 0.
 
 ## Melhorias 
 
-- [ ] Capturar dados com EventListener ao invés de interação direta com o elemento;
-- [ ] Iniciar calculo automático após todos os campos estarem preenchidos, ao digitar o numero de pessoas (exibir mensagem de validação para os casos)
+- [x] Capturar dados com EventListener ao invés de interação direta com o elemento;
+- [x] Iniciar calculo automático após todos os campos estarem preenchidos, ao digitar o numero de pessoas (exibir mensagem de validação para os casos)
 - [ ] Aplicar validações. Casos possíveis:
     - [x] Ir direto para a taxa da gorjeta sem que o valor da conta esteja preenchido;
     - [x] Ir direto para o campo Número de pessoas sem selecionar a taxa da gorjeta
 - [x] Acrescentar o campo Custom em lugar de 100% e capturar seu valor através de um EventListener
 - [x] Fazer com que o usuário possa selecionar a taxa através dos botões OU o campo Custom
-- [ ] Ao selecionar a taxa, caso o Custom esteja preenchido, esvaziar o Custom e assumir a taxa
+- [x] Ao selecionar a taxa, caso o Custom esteja preenchido, esvaziar o Custom e assumir a taxa
 - [ ] Retirar o botão **CALC** e deixar apenas o **RESET**, que será responsável pelo reload da aplicação.
 
-- [ ] A função calculateAmount() deve ser invocada ao modificar o número de pessoas, caso sejam preenchidos os demais campos.
+- [x] A função calculate() deve ser invocada ao modificar o número de pessoas, caso sejam preenchidos os demais campos.
 
 - [ ] Simplificar o código
     - [ ] conteúdo `document.getElementById('tip-by-person')` pode ser substituído pelo id do elemento diretamente e aplicadas modificações necessárias

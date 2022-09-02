@@ -16,6 +16,8 @@ const validationBillText = "Please, enter a Bill value.";
 
 const validationTipText = "Please, enter a Tip value.";
 
+const validationPeopleText = "Please, enter the number of people.";
+
 let tipButtonColorOriginal = "#014141"
 
 let tipButtonColorHover = "#26c0a3"
@@ -42,6 +44,8 @@ const tipValidation = document.getElementById('tip-validation');
 //People
 
 const people = document.getElementById('number-of-people');
+
+const peopleValidation = document.getElementById('people-validation');
 
 /**
  * Functions to get elements values
@@ -104,20 +108,24 @@ function getTipTax() {
         }
         
         validationTipTax()
-        
+
+        calculate()
+
       })
     })  
 }
 
 function getTipTaxCustom() {
 
-  tipTaxCustom.addEventListener('change', function() {
+  tipTaxCustom.addEventListener('keyup', function() {
     
     validationBill()
     
     tipValue = Number(tipTaxCustom.value);
     
     cleanTipButtonColor()
+
+    calculate()
   
   })
 
@@ -153,17 +161,50 @@ function cleanTipButtonColor() {
 
 function getPeople() {
   
-  people.addEventListener('change', function() {
+  people.addEventListener('keyup', function() {
     
     validationBill()
   
     validationTipTax()
 
     numberOfpeople = people.value;
+
+    calculate()
     
   })
 
 }
+
+function validationPeople() {
+
+  if(numberOfpeople === 0) {
+
+    peopleValidation.textContent = validationPeopleText;
+
+  } else {
+
+    peopleValidation.textContent = " ";
+
+  }
+
+}
+
+function calculate() {
+
+  if(billValue > 0 && tipValue > 0 && numberOfpeople > 0) {
+  
+    let amountTip = billValue * (tipValue / 100);
+    let amountTipByPerson = amountTip / numberOfpeople;
+    let amount = billValue + amountTip;
+    let amountByPerson = amount / numberOfpeople;
+
+    tipByPerson.textContent = `$ ${amountTipByPerson.toFixed(2)}`;
+    totalByPerson.textContent = `$ ${amountByPerson.toFixed(2)}`;
+
+  }
+
+}
+
 
 getBillValue()
 getTipTax()

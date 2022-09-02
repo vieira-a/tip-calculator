@@ -60,7 +60,8 @@ nav {
 }
 
 #bill-validation,
-#tip-validation {
+#tip-validation,
+#people-validation {
   font-size: 1rem;
   color: red;
 }
