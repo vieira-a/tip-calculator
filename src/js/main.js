@@ -12,7 +12,9 @@ let tipValue = 0;
 
 let numberOfpeople = 0;
 
-const validationText = "Invalid option";
+const validationBillText = "Please, enter a Bill value.";
+
+const validationTipText = "Please, enter a Tip value.";
 
 let tipButtonColorOriginal = "#014141"
 
@@ -28,11 +30,14 @@ const billElement = document.getElementById('bill');
 
 const billValidation = document.getElementById('bill-validation');
 
+
 //Tip
 
 const tipButtons = document.querySelectorAll('.billButton');
 
 const tipTaxCustom = document.querySelector('.tipCustom');
+
+const tipValidation = document.getElementById('tip-validation');
 
 //People
 
@@ -61,7 +66,7 @@ function validationBill() {
   
   if(billValue === 0 ) {
   
-    billValidation.textContent = validationText;
+    billValidation.textContent = validationBillText;
   
   } else {
   
@@ -98,6 +103,8 @@ function getTipTax() {
 
         }
         
+        validationTipTax()
+        
       })
     })  
 }
@@ -113,6 +120,20 @@ function getTipTaxCustom() {
     cleanTipButtonColor()
   
   })
+
+}
+
+function validationTipTax() {
+
+  if(tipValue === 0) {
+
+    tipValidation.textContent = validationTipText;
+
+  } else {
+
+    tipValidation.textContent = " ";
+
+  }
 
 }
 
@@ -134,6 +155,10 @@ function getPeople() {
   
   people.addEventListener('change', function() {
     
+    validationBill()
+  
+    validationTipTax()
+
     numberOfpeople = people.value;
     
   })
